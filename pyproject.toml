@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "em-morphology-tokyo-bucket"
+version = "0.0.1"
+description = "GCP bucket for EM morphology data collaborations."
+authors = ["Way Lab Community"]
+license = "BSD-3-Clause License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pre-commit = "^3.0.0"
+cookiecutter = "^2.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.setuptools_scm]
