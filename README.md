@@ -1,4 +1,4 @@
-# Google Cloud - Cloud Storage Bucket - em-morphology-tokyo-bucket
+# Google Cloud - Cloud Storage Bucket - waylab-em-morphology-tokyo-bucket
 
 ```mermaid
 flowchart LR

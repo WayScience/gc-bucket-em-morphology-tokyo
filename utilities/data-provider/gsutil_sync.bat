@@ -16,9 +16,9 @@
 call gcloud auth activate-service-account --key-file=service-account.json
 
 ::  synchronize data from local directory `./data`
-::  to bucket em-morphology-tokyo-bucket
+::  to bucket waylab-em-morphology-tokyo-bucket
 ::  see the following for more details:
 ::  https://cloud.google.com/storage/docs/gsutil/commands/rsync
-call gsutil -m rsync -r data gs://em-morphology-tokyo-bucket
+call gsutil -m rsync -r data gs://waylab-em-morphology-tokyo-bucket
 
 pause
