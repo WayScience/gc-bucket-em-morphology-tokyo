@@ -210,6 +210,3 @@ cue.mod/dagger.*
 
 # terraform ignores
 hashicorp/
-
-# tf credential ignore
-utilities/data-provider/service-account.json
