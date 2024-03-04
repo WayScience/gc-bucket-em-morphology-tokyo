@@ -3,4 +3,3 @@
 resource "google_service_account" "service_account" {
   account_id = "${var.initiative_label}-svc-account"
 }
-
