@@ -9,11 +9,10 @@
 ::  see gsutil docs for more information:
 ::  https://cloud.google.com/storage/docs/gsutil_install
 
-::  authenticate gcloud for the service account
-::  note: this is the preferred method for authenticating gsutil
+::  authenticate gcloud using a related account
 ::  see the following for more details:
-::  https://cloud.google.com/storage/docs/gsutil/commands/config#configuring-service-account-credentials
-call gcloud auth activate-service-account --key-file=service-account.json
+::  https://cloud.google.com/sdk/gcloud/reference/auth
+call gcloud auth login
 
 ::  synchronize data from local directory `./data`
 ::  to bucket waylab-em-morphology-tokyo-bucket
