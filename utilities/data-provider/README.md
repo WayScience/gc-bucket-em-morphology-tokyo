@@ -13,6 +13,7 @@ Please see the following instructions on uploading data to the Google Cloud buck
 1. [Configure rclone with Google Cloud Storage](https://rclone.org/googlecloudstorage/).
 
    - Note: if using a Google account, make sure to authenticate using this account when prompted within the web browser (the terminal will prompt through the browser)
+   - If unable to use the browser with a Google account, consider using the `service-account.json` file and leveraging the `Service Account Credentials JSON file path` during `rclone` configuration.
 
 1. Test access to Google Cloud Storage bucket with the configured rclone access using, for example, `rclone ls <configured_name>:waylab-em-morphology-tokyo-bucket`
 
@@ -34,8 +35,9 @@ Please see the following instructions on uploading data to the Google Cloud buck
 
 __Note:__ The gsutil command provided within the script makes use of the `-m` option for multi-threading performance increases and the `-r` option for recursive data transfer.
 
+1. Ensure `service-account.json` key is found within the same directory where script is run.
 1. Prepare data to be uploaded under `./data` directory relative to `gsutil_sync.bat` location.
-1. Run the `gsutil_sync.bat` script by double clicking it or from a command line prompt (for example, by typing: `gsutil_sync.bat` and hitting the enter key). Note: you may be asked to login using your associated Google credentials.
+1. Run the `gsutil_sync.bat` script by double clicking it or from a command line prompt (for example, by typing: `gsutil_sync.bat` and hitting the enter key).
 
 Please reference the following directory tree structure for an example of what the path should contain:
 
@@ -43,8 +45,9 @@ Please reference the following directory tree structure for an example of what t
 .
 ├── README.md
 ├── data
-│   └── <data to be synchronized>
-└── gsutil_sync.bat
+│   └── <data to be synchronized>
+├── gsutil_sync.bat
+└── service-account.json
 ```
 
 ### Additional Notes (gsutil)
